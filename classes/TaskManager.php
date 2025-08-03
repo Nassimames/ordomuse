@@ -69,4 +69,12 @@ class TaskManager
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         return $stmt->execute();
     }
+
+    public function getTaskById($id)
+    {
+        $stmt = $this->conn->prepare("SELECT * FROM tasks WHERE id = :id");
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }

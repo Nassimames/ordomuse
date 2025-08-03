@@ -13,7 +13,7 @@ Ordomuse est une application web de gestion de tâches développée en PHP orien
 - **Compteur** : Nombre total de tâches, terminées et non terminées.
 
 ## Technologies
-- **Back-end** : PHP 8, MySQL (PDO)
+- **Back-end** :PHP 8, MySQL (PDO)
 - **Front-end** : HTML5, CSS3 (Flexbox), JavaScript (Fetch API)
 - **Versionnement** : Git, GitHub
 
